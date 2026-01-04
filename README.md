@@ -1,4 +1,4 @@
-# ACM UCR Website Template
+# RidesUCR Website
 
 ![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23407ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
@@ -13,11 +13,11 @@
 
 ## Figma
 
-[ACM UCR Website Template Figma Design File](https://www.figma.com/)
+[RidesUCR Figma Design File]([https://www.figma.com/](https://www.figma.com/design/ZXkW9240xqmfD5MMnRzYTm/Fall--25-Ride-UCR?node-id=0-1&p=f))
 
 ## Node.js
 
-ACM UCR Website Template runs on Node.js Version 20.10.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
+RidesUCR Website runs on Node.js Version 20.10.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
 
 ## Next.js
 
