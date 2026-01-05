@@ -15,7 +15,7 @@
 
 [RidesUCR Figma Design File](https://www.figma.com/design/ZXkW9240xqmfD5MMnRzYTm/Fall--25-Ride-UCR?node-id=0-1&p=f)
 
-## Node.js
+## Node.js 
 
 RidesUCR Website runs on Node.js Version 20.10.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
 
