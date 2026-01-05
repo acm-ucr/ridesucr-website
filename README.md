@@ -13,7 +13,7 @@
 
 ## Figma
 
-[RidesUCR Figma Design File]([https://www.figma.com/](https://www.figma.com/design/ZXkW9240xqmfD5MMnRzYTm/Fall--25-Ride-UCR?node-id=0-1&p=f))
+[RidesUCR Figma Design File](https://www.figma.com/design/ZXkW9240xqmfD5MMnRzYTm/Fall--25-Ride-UCR?node-id=0-1&p=f)
 
 ## Node.js
 
