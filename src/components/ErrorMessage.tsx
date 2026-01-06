@@ -1,9 +1,8 @@
-
 interface ErrorMessageProps {
-    text: string
+  text: string;
 }
 
-const ErrorMessage = ({text}: ErrorMessageProps) => {
+const ErrorMessage = ({ text }: ErrorMessageProps) => {
   return <div>{text}</div>;
 };
 
