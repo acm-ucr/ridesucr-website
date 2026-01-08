@@ -1,8 +1,13 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Bebas_Neue } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 
-const inter = Inter({ subsets: ["latin"] });
+const bebasNeue = Bebas_Neue({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400"],
+  variable: "--bebas-neue-font",
+});
 
 export const metadata = {
   title: "RidesUCR Website",
@@ -17,7 +22,7 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={bebasNeue.className}>
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
       </body>
     </html>
