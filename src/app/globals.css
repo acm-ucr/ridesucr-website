@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ridesucr-gray: #949494;
-  --color-ridesucr-black: #000000;
-  --color-ridesucr-green: #005058;
-  --color-ridesucr-white: #ffffff;
+  --color-ridesucr-gray: #676767;
+  --color-ridesucr-black: #333333;
+  --color-ridesucr-green: #2d4d2d;
+  --color-ridesucr-white: #ddeeff;
 }
