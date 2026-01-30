@@ -1,8 +1,17 @@
 @import "tailwindcss";
 
-@theme {
+/*@theme {
   --color-ridesucr-gray: #949494;
   --color-ridesucr-black: #000000;
   --color-ridesucr-green: #005058;
   --color-ridesucr-white: #ffffff;
+}*/
+:root {
+--color-ridesucr-lightred: #fca5a5;
+
+--color-ridesucr-orange: #fdba74;
+
+    --color-ridesucr-mintgreen: #86efac;
+
+     --color-ridesucr-blue: #60a5fa;
 }
