@@ -1,5 +1,11 @@
-const Gallery = () => {
-  return <div>Gallery</div>;
-};
+import Title from "@/components/Title";
+const UPCOMINGEVENT= ()=>{
+return(
+<main>
+  <Title text = "UPCOMING EVENTS"/>
+</main>
 
-export default Gallery;
+);
+
+};
+export default UPCOMINGEVENT;

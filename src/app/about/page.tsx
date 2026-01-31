@@ -1,5 +1,12 @@
+import Title from "@/components/Title";
 const About = () => {
-  return <div>About</div>;
+  return(
+<main>
+  <Title text="ABOUT US"/>
+</main>
+  );
 };
+
+
 
 export default About;
