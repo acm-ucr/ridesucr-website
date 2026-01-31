@@ -22,7 +22,7 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body className={bebasNeue.className}>
+      <body className={`${bebasNeue.className} bg-black`}>
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
       </body>
     </html>
