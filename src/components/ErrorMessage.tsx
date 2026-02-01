@@ -10,7 +10,7 @@ const ErrorMessage = ({ text }: ErrorMessageProps) => {
     <div className="bg-ridesucr-black flex h-screen w-screen items-center">
       <div className="flex w-full flex-col items-center px-60">
         <div className="flex w-full">
-          <div className="relative z-10 pt-16 pb-10 right-20">
+          <div className="relative right-20 z-10 pt-16 pb-10">
             <div className="text-ridesucr-white text-[20rem] leading-none">
               {text}
             </div>
