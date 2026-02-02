@@ -1,5 +1,5 @@
 import Title from "@/components/Title";
-const GARAGE = () => {
+const Gallery = () => {
   return (
     <main>
       <Title text="GARAGE" />
@@ -7,4 +7,4 @@ const GARAGE = () => {
   );
 };
 
-export default GARAGE;
+export default Gallery;

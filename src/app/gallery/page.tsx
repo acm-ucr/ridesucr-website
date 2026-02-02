@@ -1,9 +1,9 @@
 import Title from "@/components/Title";
-const UPCOMINGEVENT = () => {
+const Events = () => {
   return (
     <main>
       <Title text="UPCOMING EVENTS" />
     </main>
   );
 };
-export default UPCOMINGEVENT;
+export default Events;
