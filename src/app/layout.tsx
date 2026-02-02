@@ -24,7 +24,10 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <body className={`${bebasNeue.className} bg-black`}>
-        <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
+        <ReactQueryClientProvider>
+          <Navbar />
+          {children}
+          </ReactQueryClientProvider>
       </body>
     </html>
   );
