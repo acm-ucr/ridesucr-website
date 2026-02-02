@@ -1,13 +1,12 @@
 const Moto = () => {
   return (
-    <div className="text-left">
-      <h1 className="text-ridesucr-white text-6xl">
+    <div className="w-screen text-left px-9">
+      <p className="text-ridesucr-white text-9xl leading-none">
         driven by
         <br />
         passion
-      </h1>
-
-      <p className="text-ridesucr-gray text-lg">we are rides @ ucr.</p>
+      </p>
+      <p className="text-ridesucr-gray text-4xl">we are rides @ ucr.</p>
     </div>
   );
 };

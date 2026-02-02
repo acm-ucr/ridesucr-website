@@ -10,7 +10,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "plugins": [
       {
         "name": "next"
@@ -30,7 +30,6 @@
     ".next/types/**/*.ts",
     "postcss.config.mjs",
     "next.config.js",
-    ".next/dev/types/**/*.ts"
   ],
   "exclude": ["node_modules"]
 }
