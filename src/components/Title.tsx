@@ -4,12 +4,9 @@ type TitleProps = {
 
 const Title = ({ text }: TitleProps) => {
   return (
-    <div className="flex w-full items-center justify-center bg-black text-6x1 text-center text-white uppercase">
-
-        {text}
+    <div className="text-6x1 flex w-full items-center justify-center bg-black text-center text-white uppercase">
+      {text}
     </div>
-
- 
   );
 };
 
