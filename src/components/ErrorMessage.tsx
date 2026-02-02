@@ -9,10 +9,8 @@ const ErrorMessage = ({ text }: ErrorMessageProps) => {
   return (
     <div className="bg-ridesucr-black flex h-screen flex-col items-center">
       <div className="flex overflow-hidden px-[20vw]">
-        <div className="relative right-20 z-10 flex flex-col justify-center py-20">
-          <p className="text-ridesucr-white text-[25rem] leading-none">
-            {text}
-          </p>
+        <div className="z-10 flex flex-col justify-center">
+          <p className="text-ridesucr-white text-[25rem]/none">{text}</p>
           <p className="text-ridesucr-gray pb-2 text-6xl">OFF THE ROAD.</p>
           <p className="text-ridesucr-white text-6xl">RETURN HOME?</p>
         </div>
