@@ -1,6 +1,6 @@
 const Moto = () => {
   return (
-    <div className="w-screen text-left px-9">
+    <div className="w-screen px-9 text-left">
       <p className="text-ridesucr-white text-9xl leading-none">
         driven by
         <br />
