@@ -24,18 +24,12 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <body className={bebasNeue.className}>
-        <div className="bg-ridesucr-black flex min-h-screen flex-col">
-          {" "}
-          {/* set default background to black so I can see the footer properly. grows main non-footer portion to be the size of the browser window minimum */}
-          <ReactQueryClientProvider>
-            <main className="flex-grow">
-              {" "}
-              {/*expands area not used by header/footer*/}
-              {children}
-            </main>
+        <ReactQueryClientProvider>
+          <div className="flex min-h-screen flex-col bg-black">
+            <main className="flex-grow">{children}</main>
             <Footer />
-          </ReactQueryClientProvider>
-        </div>
+          </div>
+        </ReactQueryClientProvider>
       </body>
     </html>
   );
