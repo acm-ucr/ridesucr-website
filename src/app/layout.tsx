@@ -23,13 +23,9 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body className={bebasNeue.className}>
-        <ReactQueryClientProvider>
-          <div className="flex min-h-screen flex-col bg-black">
-            <main className="flex-grow">{children}</main>
-            <Footer />
-          </div>
-        </ReactQueryClientProvider>
+      <body className={`${bebasNeue.className} bg-black`}>
+        <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
+        <Footer />
       </body>
     </html>
   );
