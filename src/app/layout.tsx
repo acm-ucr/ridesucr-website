@@ -2,6 +2,7 @@ import "./globals.css";
 import { Bebas_Neue } from "next/font/google";
 import { ReactQueryClientProvider } from "@/utils/react-query";
 import Navbar from "@/components/Navbar";
+import Footer from "../components/Footer";
 
 const bebasNeue = Bebas_Neue({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: LayoutProps) {
         <ReactQueryClientProvider>
           <Navbar />
           {children}
+          <Footer />
         </ReactQueryClientProvider>
       </body>
     </html>
