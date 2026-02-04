@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="from-ridesucr-green to-ridesucr-black relative flex h-24 w-full items-end justify-between bg-linear-to-t px-10 pb-10">
+    <div className="from-ridesucr-green to-ridesucr-black relative flex justify-between bg-linear-to-t px-10 pb-10">
       <div className="from-ridesucr-white to-ridesucr-black absolute top-0 left-1/2 h-[1px] w-1/2 -translate-x-1/2 bg-radial" />
       <div className="translate-y-5 text-5xl text-white">DRIVEN BY PASSION</div>
       <div className="flex translate-y-5 items-center gap-7">
