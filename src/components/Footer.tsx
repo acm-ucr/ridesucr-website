@@ -1,14 +1,12 @@
 import Image from "next/image";
 import { RIDES_LINKS } from "../data/LinksData";
-import Link from "next/link"
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <div className="from-ridesucr-green to-ridesucr-black relative flex h-24 w-full items-end justify-between bg-linear-to-t px-10 pb-10">
       <div className="from-ridesucr-white to-ridesucr-black absolute top-0 left-1/2 h-[1px] w-1/2 -translate-x-1/2 bg-radial" />
-      <div className="translate-y-5 text-white text-5xl">
-        DRIVEN BY PASSION
-      </div>
+      <div className="translate-y-5 text-5xl text-white">DRIVEN BY PASSION</div>
       <div className="flex translate-y-5 items-center gap-7">
         <div className="flex items-center gap-10">
           <div className="from-ridesucr-white/80 to-ridesucr-white/40 rounded-2xl bg-linear-to-b p-[1px]">
@@ -23,10 +21,7 @@ const Footer = () => {
                 />
               </Link>
 
-              <Link
-                href={RIDES_LINKS.highlanderlink}
-                target="_blank"
-              >
+              <Link href={RIDES_LINKS.highlanderlink} target="_blank">
                 <Image
                   src="/Linkbox/HighlanderLink.svg"
                   alt="HighlanderLink"
@@ -49,14 +44,14 @@ const Footer = () => {
           </div>
         </div>
 
-        <Link href = "/" className="flex flex-col items-center">
+        <Link href="/" className="flex flex-col items-center">
           <Image
             src="/Logo.svg"
             alt="Logo"
             width={64}
             height={64}
             className="h-auto w-16 invert"
-            priority 
+            priority
           />
         </Link>
       </div>
