@@ -1,9 +1,9 @@
-import Info from "@/components/about/Info";
+import InfoSection from "@/components/about/InfoSection";
 
 const About = () => {
   return (
     <div>
-      <Info />
+      <InfoSection />
     </div>
   );
 };
