@@ -2,7 +2,7 @@ import Title from "@/components/Title";
 const Events = () => {
   return (
     <div>
-       <Title text="Upcoming Events" />
+      <Title text="Upcoming Events" />
     </div>
   );
 };
