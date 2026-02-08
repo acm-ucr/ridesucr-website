@@ -3,8 +3,8 @@ import DownArrow from "@/public/Polygon_1.svg";
 
 const Moto = () => {
   return (
-    <div className="relative w-screen text-ridesucr-white">
-      <div className="pl-[15vw] flex items-center gap-5">
+    <div className="text-ridesucr-white relative w-screen">
+      <div className="flex items-center gap-5 pl-[15vw]">
         <div className="text-left">
           <p className="text-[12rem] leading-none">
             Driven by
@@ -14,7 +14,7 @@ const Moto = () => {
           <p className="text-ridesucr-gray text-5xl">We are rides @ ucr.</p>
         </div>
 
-        <div className="flex items-center justify-center w-96 p-8 bg-white/30 backdrop-blur-lg rounded-md text-2xl text-center text-ridesucr-white">
+        <div className="text-ridesucr-white flex w-96 items-center justify-center rounded-md bg-white/30 p-8 text-center text-2xl backdrop-blur-lg">
           Link 1
           <br />
           <br />
@@ -25,13 +25,13 @@ const Moto = () => {
         </div>
       </div>
 
-      <div className="w-full flex justify-center mt-8 mb-16">
+      <div className="mt-8 mb-16 flex w-full justify-center">
         <button>
           <Image src={DownArrow} alt="Down Arrow" width={32} height={32} />
         </button>
       </div>
 
-      <div className="absolute bottom-0 left-1/2 h-[1px] w-1/2 -translate-x-1/2 bg-radial from-ridesucr-white to-ridesucr-black" />
+      <div className="from-ridesucr-white to-ridesucr-black absolute bottom-0 left-1/2 h-[1px] w-1/2 -translate-x-1/2 bg-radial" />
     </div>
   );
 };
