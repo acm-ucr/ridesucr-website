@@ -1,11 +1,11 @@
-import InfoSection from "@/components/about/InfoSection";
+import Info from "@/components/about/Info";
 import Title from "@/components/Title";
 
 const About = () => {
   return (
     <div>
-      <Title text="About Us" />
-      <InfoSection />
+       <Title text="About Us" />
+      <Info />
     </div>
   );
 };
