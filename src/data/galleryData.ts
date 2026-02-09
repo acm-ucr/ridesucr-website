@@ -1,13 +1,13 @@
-import { StaticImageData } from "next/image"
-import car1 from "@/public/cars/car1.webp"
-import car2 from "@/public/cars/car2.webp"
-import car3 from "@/public/cars/car3.webp"
-import car4 from "@/public/cars/car4.webp"
-import car5 from "@/public/cars/car5.webp"
-import car6 from "@/public/cars/car6.webp"
-import car7 from "@/public/cars/car7.webp"
-import car8 from "@/public/cars/car8.webp"
-import car9 from "@/public/cars/car9.webp"
+import { StaticImageData } from "next/image";
+import car1 from "@/public/cars/car1.webp";
+import car2 from "@/public/cars/car2.webp";
+import car3 from "@/public/cars/car3.webp";
+import car4 from "@/public/cars/car4.webp";
+import car5 from "@/public/cars/car5.webp";
+import car6 from "@/public/cars/car6.webp";
+import car7 from "@/public/cars/car7.webp";
+import car8 from "@/public/cars/car8.webp";
+import car9 from "@/public/cars/car9.webp";
 
 export interface galleryData {
   Pictures: StaticImageData;
