@@ -4,10 +4,10 @@ type TitleProps = {
 
 const Title = ({ text }: TitleProps) => {
   return (
-    <div className="flex items-center justify-center bg-black py-10 text-center text-7xl text-white uppercase">
+    <div className="text-7xl flex items-center justify-center bg-black text-center text-white uppercase py-10">
       {text}
     </div>
   );
-};
+}
 
 export default Title;
