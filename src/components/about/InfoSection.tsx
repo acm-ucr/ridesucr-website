@@ -2,7 +2,7 @@ import Info from "@/components/about/Info";
 
 const InfoSection = () => {
   return (
-    <div className="flex h-screen w-screen justify-center">
+    <div className="flex h-screen w-full justify-center">
       <div className="flex w-1/2 flex-col justify-evenly">
         <Info info="Rides @ UCR is a student-led club that aims to bring the car community together. We organize weekly events, such as car meets, with the purpose of fostering a community of enthusiasts." />
         <div className="w-2/5">
