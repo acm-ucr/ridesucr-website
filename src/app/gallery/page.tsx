@@ -3,7 +3,7 @@ import Title from "@/components/Title";
 
 const OurGallery = () => {
   return (
-    <div className="pt-8 pr-5 pb-1 pl-5">
+    <div className="py-8 px-4">
       <Title text="Our Garage" />
       <Gallery />
     </div>
