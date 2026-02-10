@@ -1,12 +1,13 @@
+import Gallery from "../../components/gallery/Garage";
 import Title from "@/components/Title";
-const Gallery = () => {
+
+const OurGallery = () => {
   return (
-    <div>
+    <div className="pt-8 pr-5 pb-1 pl-5">
       <Title text="Our Garage" />
-      <div className="p-8">
-        <Gallery />
-      </div>
+      <Gallery />
     </div>
   );
 };
-export default Gallery;
+
+export default OurGallery;
