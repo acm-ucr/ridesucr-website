@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { galleryData } from "@/data/galleryData";
 
-const PicturesGrid = () => {
+const CarsGrid = () => {
   return (
     <div className="grid h-[75rem] grid-cols-3 grid-rows-3 gap-1.5">
       {galleryData.map((item, index) => (
@@ -12,8 +12,6 @@ const PicturesGrid = () => {
           <Image
             className={`${"flex h-full w-full items-center justify-center object-cover"}`}
             src={item.Pictures}
-            width={500}
-            height={500}
             alt={item.Alt}
           />
         </div>
@@ -22,4 +20,4 @@ const PicturesGrid = () => {
   );
 };
 
-export default PicturesGrid;
+export default CarsGrid;
