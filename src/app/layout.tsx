@@ -24,7 +24,7 @@ type LayoutProps = {
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body className={`${bebasNeue.className} max-w-full bg-black`}>
+      <body className={`${bebasNeue.className} bg-black`}>
         <ReactQueryClientProvider>
           <Navbar />
           {children}
