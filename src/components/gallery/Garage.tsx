@@ -1,4 +1,4 @@
-import CarsGrid from "@/components/gallery/CarsGrid"
+import CarsGrid from "@/components/gallery/CarsGrid";
 
 const Garage = () => {
   return (
