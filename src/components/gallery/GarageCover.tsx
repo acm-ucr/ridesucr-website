@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import GarageBg from "@/../public/cars/car1.webp"; 
+import GarageBg from "@/../public/cars/car1.webp";
 
 const GarageCover = () => {
   return (
@@ -10,7 +10,7 @@ const GarageCover = () => {
         alt=""
         fill
         priority
-        className="object-cover blur-md scale-110 opacity-80" 
+        className="scale-110 object-cover opacity-80 blur-md"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black from-15% via-transparent via-50% to-black to-85%" />
     </div>

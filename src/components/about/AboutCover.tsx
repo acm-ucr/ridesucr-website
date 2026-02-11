@@ -10,9 +10,9 @@ const AboutCover = () => {
         alt=""
         fill
         priority
-        className="object-cover blur-sm scale-110 opacity-80" 
+        className="scale-110 object-cover opacity-80 blur-sm"
       />
-      
+
       <div className="absolute inset-0 bg-gradient-to-b from-black from-15% via-transparent via-50% to-black to-85%" />
     </div>
   );
