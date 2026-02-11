@@ -7,15 +7,15 @@ const Moto = () => {
       <div className="flex items-center gap-5 pl-[15vw]">
         <div className="text-left">
           <div className="text-[12rem]">
-            <span className="block mb-[-0.5em]">Driven by</span>
-            <span className="block mb-[-0.2em]">Passion</span>
+            <span className="mb-[-0.5em] block">Driven by</span>
+            <span className="mb-[-0.2em] block">Passion</span>
           </div>
-          <span className="text-ridesucr-gray text-5xl block mt-4">
+          <span className="text-ridesucr-gray mt-4 block text-5xl">
             We are rides @ ucr.
           </span>
         </div>
 
-        <div className="text-ridesucr-white flex w-96 flex-col justify-evenly rounded-md bg-white/30 p-8 text-center text-2xl backdrop-blur-lg h-64">
+        <div className="text-ridesucr-white flex h-64 w-96 flex-col justify-evenly rounded-md bg-white/30 p-8 text-center text-2xl backdrop-blur-lg">
           <div>Link 1</div>
           <div>Link 2</div>
           <div>Link 3</div>
