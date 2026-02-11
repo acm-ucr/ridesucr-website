@@ -4,9 +4,9 @@ const Events = () => {
   return (
     <main className="relative min-h-screen">
       <EventsCover />
-    <div>
-      <Title text="Upcoming Events" />
-    </div>
+      <div>
+        <Title text="Upcoming Events" />
+      </div>
     </main>
   );
 };

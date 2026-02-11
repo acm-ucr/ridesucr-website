@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import EventsBg from "@/../public/cars/car6.webp"; 
+import EventsBg from "@/../public/cars/car6.webp";
 
 const EventsCover = () => {
   return (
@@ -10,7 +10,7 @@ const EventsCover = () => {
         alt=""
         fill
         priority
-        className="object-cover blur-md scale-110" 
+        className="scale-110 object-cover blur-md"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black from-15% via-transparent via-50% to-black to-85%" />
     </div>

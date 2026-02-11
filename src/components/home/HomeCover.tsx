@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import HomeBg from "@/../public/cars/car1.webp"; 
+import HomeBg from "@/../public/cars/car1.webp";
 
 const HomeCover = () => {
   const repeatingText = "DRIVEN BY PASSION • RIDES @ UCR • ".repeat(200);
@@ -12,11 +12,11 @@ const HomeCover = () => {
         alt=""
         fill
         priority
-        className="object-cover blur-sm scale-105 opacity-70" 
+        className="scale-105 object-cover opacity-70 blur-sm"
       />
 
-      <div className="absolute inset-0 flex flex-wrap content-start justify-center overflow-hidden opacity-3 pointer-events-none select-none">
-        <p className="text-white text-[30px] uppercase break-all">
+      <div className="pointer-events-none absolute inset-0 flex flex-wrap content-start justify-center overflow-hidden opacity-3 select-none">
+        <p className="text-[30px] break-all text-white uppercase">
           {repeatingText}
         </p>
       </div>
