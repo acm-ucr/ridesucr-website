@@ -5,7 +5,7 @@ import Rides from "@/public/Logo-White.svg";
 
 const Navbar = () => {
   return (
-    <div className="relative mt-5 w-screen">
+    <div className="relative mt-5 w-full">
       <div className="ml-15 h-fit w-fit px-5 py-3">
         <Link href={"/"}>
           <Image src={Rides} alt="logo" />
