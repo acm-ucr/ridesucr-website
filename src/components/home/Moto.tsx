@@ -1,30 +1,38 @@
 import Image from "next/image";
 import DownArrow from "@/public/Jump_Button.svg";
+import { RIDES_LINKS } from "../../data/LinksData";
+import Link from "next/link";
 
 const Moto = () => {
   return (
     <div className="text-ridesucr-white relative w-screen">
-      <div className="flex items-center gap-5 pl-[15vw]">
+      <div className="flex items-center gap-16 pl-[15vw]">
         <div className="text-left">
           <div className="text-[12rem]">
-            <span className="mb-[-0.5em] block">Driven by</span>
-            <span className="mb-[-0.2em] block">Passion</span>
+            <div className="mb-[-0.5em]">Driven by</div>
+            <div className="mb-[-0.2em]">Passion</div>
           </div>
-          <span className="text-ridesucr-gray mt-4 block text-5xl">
+          <div className="text-ridesucr-gray mt-4 text-5xl">
             We are rides @ ucr.
-          </span>
+          </div>
         </div>
 
-        <div className="text-ridesucr-white flex h-64 w-96 flex-col justify-evenly rounded-md bg-white/30 p-8 text-center text-2xl backdrop-blur-lg">
-          <div>Link 1</div>
-          <div>Link 2</div>
-          <div>Link 3</div>
+        <div className="text-ridesucr-white flex h-[20vh] min-h-[200px] w-[30vw] min-w-[250px] flex-col justify-evenly rounded-md bg-white/30 p-8 text-center text-2xl backdrop-blur-lg">
+          <Link href={RIDES_LINKS.discord} target="_blank">
+            Discord
+          </Link>
+          <Link href={RIDES_LINKS.highlanderlink} target="_blank">
+            HighlanderLink
+          </Link>
+          <Link href={RIDES_LINKS.instagram} target="_blank">
+            Instagram
+          </Link>
         </div>
       </div>
 
       <div className="mt-8 mb-16 flex w-full justify-center">
         <button>
-          <Image src={DownArrow} alt="Down Arrow" width={32} height={32} />
+          <Image src={DownArrow} alt="Down Arrow" />
         </button>
       </div>
 
