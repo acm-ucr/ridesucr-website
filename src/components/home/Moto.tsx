@@ -1,6 +1,6 @@
 import Image from "next/image";
 import DownArrow from "@/public/Jump_Button.svg";
-import { RIDES_LINKS } from "../../data/LinksData";
+import { RIDES_LINKS } from "@/data/LinksData";
 import Link from "next/link";
 
 const Moto = () => {
