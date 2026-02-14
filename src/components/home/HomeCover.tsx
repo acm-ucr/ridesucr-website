@@ -18,9 +18,7 @@ const HomeCover = () => {
         />
       )}
 
-      <p className="text-3xl text-white opacity-3 p-2">
-        {repeatingText}
-      </p>
+      <p className="p-2 text-3xl text-white opacity-3">{repeatingText}</p>
 
       <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent via-50% to-black" />
     </div>
