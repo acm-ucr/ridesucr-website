@@ -1,13 +1,13 @@
 "use client";
 import Image from "next/image";
-import GarageBg from "@/../public/cars/car1.webp";
+import GarageBg from "@/public/cars/car1.webp";
 
 const GarageCover = () => {
   return (
     <div className="fixed inset-0 -z-10 h-screen w-full overflow-hidden bg-black">
       <Image
         src={GarageBg}
-        alt=""
+        alt="Garage Background (Porsche 911)"
         fill
         priority
         className="scale-110 object-cover opacity-80 blur-md"
