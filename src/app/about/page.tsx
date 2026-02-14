@@ -4,14 +4,11 @@ import Title from "@/components/Title";
 
 const About = () => {
   return (
-    <main className="relative min-h-screen">
-      <AboutCover />
-
-      <div>
-        <Title text="About Us" />
-        <InfoSection />
-      </div>
-    </main>
+    <div className="relative min-h-screen">
+    <AboutCover />
+    <Title text="About Us" />
+    <InfoSection />
+  </div>
   );
 };
 

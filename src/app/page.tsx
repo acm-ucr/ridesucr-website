@@ -2,13 +2,12 @@ import HomeCover from "@/components/home/HomeCover";
 import Moto from "@/components/home/Moto";
 const Home = () => {
   return (
-    <main className="relative min-h-screen w-full overflow-hidden">
+    <div className="relative min-h-screen w-full overflow-hidden">
       <HomeCover />
-
-      <div className="flex h-screen w-full translate-y-[-5vh] flex-col items-center justify-center">
+      <div className="flex h-screen w-full flex-col items-center justify-center -mt-10">
         <Moto />
       </div>
-    </main>
+    </div>
   );
 };
 

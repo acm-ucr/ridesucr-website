@@ -1,13 +1,13 @@
 "use client";
 import Image from "next/image";
-import AboutBg from "@/../public/cars/car4.webp";
+import AboutBg from "@/public/cars/car4.webp";
 
 const AboutCover = () => {
   return (
     <div className="fixed inset-0 -z-10 h-screen w-full overflow-hidden bg-black">
       <Image
         src={AboutBg}
-        alt=""
+        alt="About Background (1984 Nissan 300ZX)"
         fill
         priority
         className="scale-110 object-cover opacity-80 blur-sm"

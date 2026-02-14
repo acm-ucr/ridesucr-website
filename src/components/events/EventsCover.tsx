@@ -1,13 +1,13 @@
 "use client";
 import Image from "next/image";
-import EventsBg from "@/../public/cars/car6.webp";
+import EventsBg from "@/public/cars/car6.webp";
 
 const EventsCover = () => {
   return (
     <div className="fixed inset-0 -z-10 h-screen w-full overflow-hidden bg-black">
       <Image
         src={EventsBg}
-        alt=""
+        alt="Events Background (Subaru Impreza WRX STI)"
         fill
         priority
         className="scale-110 object-cover blur-md"
