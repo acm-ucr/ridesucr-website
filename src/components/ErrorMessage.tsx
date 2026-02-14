@@ -13,8 +13,11 @@ const ErrorMessage = ({ text }: ErrorMessageProps) => {
         <div className="z-10 flex flex-col justify-center">
           <p className="text-ridesucr-white text-[25rem]/none">{text}</p>
           <p className="text-ridesucr-gray pb-2 text-6xl">OFF THE ROAD.</p>
-          <Link href="/" className="text-ridesucr-white text-6xl underline hover:text-gray-400">
-              RETURN HOME?
+          <Link
+            href="/"
+            className="text-ridesucr-white text-6xl underline hover:text-gray-400"
+          >
+            RETURN HOME?
           </Link>
         </div>
         <Image
