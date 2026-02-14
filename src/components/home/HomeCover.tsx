@@ -16,8 +16,8 @@ const HomeCover = () => {
       />
 
       <p className="pointer-events-none absolute inset-0 overflow-hidden text-[30px] break-all text-white uppercase opacity-3 select-none">
-  {repeatingText}
-</p>
+        {repeatingText}
+      </p>
       <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent via-50% to-black" />
     </div>
   );

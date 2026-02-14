@@ -5,10 +5,10 @@ import Title from "@/components/Title";
 const About = () => {
   return (
     <div className="relative min-h-screen">
-    <AboutCover />
-    <Title text="About Us" />
-    <InfoSection />
-  </div>
+      <AboutCover />
+      <Title text="About Us" />
+      <InfoSection />
+    </div>
   );
 };
 
