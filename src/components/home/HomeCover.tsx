@@ -18,7 +18,7 @@ const HomeCover = () => {
         />
       )}
 
-      <p className="pointer-events-none absolute inset-0 overflow-hidden text-[30px] break-all text-white uppercase opacity-3 select-none">
+      <p className="text-3xl text-white opacity-3 p-2">
         {repeatingText}
       </p>
 
