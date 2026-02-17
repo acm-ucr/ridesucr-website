@@ -6,7 +6,7 @@ import Link from "next/link";
 const Moto = () => {
   return (
     <div className="text-ridesucr-white relative w-screen">
-      <div className="flex items-center gap-x-[10vw] pl-[15vw]">
+      <div className="flex items-center gap-x-[10vw] pl-[8vw]">
         <div className="text-left">
           <div className="text-[12rem]">
             <p className="mb-[-0.5em]">Driven by</p>
