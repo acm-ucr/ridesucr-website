@@ -1,9 +1,12 @@
 import Info from "@/components/about/Info";
+import Image from "next/image";
+import car7 from "@/public/cars/car7.webp";
+import car6 from "@/public/cars/car6.webp";
 
 const InfoSection = () => {
   return (
-    <div className="flex min-h-[60vh] w-full justify-center py-10">
-      <div className="relative flex w-1/2 flex-col gap-6">
+    <div className="flex w-full justify-center pb-10">
+      <div className="relative flex w-2/3 flex-col gap-6">
         <Info info="Rides @ UCR is a student-led club that aims to bring the car community together. We organize weekly events, such as car meets, with the purpose of fostering a community of enthusiasts." />
 
         <div className="relative h-4 w-full">
@@ -23,10 +26,9 @@ const InfoSection = () => {
 
           <div className="flex flex-1 flex-col gap-4">
             <div className="aspect-[3/2] overflow-hidden rounded-lg">
-              <img
-                src="/cars/car6.webp"
-                alt="Car6"
-                className="h-full w-full object-cover"
+              <Image
+              src = {car6}
+              alt = "Car6"
               />
             </div>
 
@@ -35,10 +37,10 @@ const InfoSection = () => {
             </div>
 
             <div className="aspect-[3/2] overflow-hidden rounded-lg">
-              <img
-                src="/cars/car7.webp"
-                alt="Car7"
-                className="h-full w-full object-cover"
+              <Image
+              src = {car7}
+              alt = "Car7"
+                //className="h-full w-full object-cover"
               />
             </div>
           </div>
