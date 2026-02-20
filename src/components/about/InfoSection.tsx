@@ -26,10 +26,7 @@ const InfoSection = () => {
 
           <div className="flex flex-1 flex-col gap-4">
             <div className="aspect-[3/2] overflow-hidden rounded-lg">
-              <Image
-              src = {car6}
-              alt = "Car6"
-              />
+              <Image src={car6} alt="Car6" />
             </div>
 
             <div className="relative h-3 w-full">
@@ -38,8 +35,8 @@ const InfoSection = () => {
 
             <div className="aspect-[3/2] overflow-hidden rounded-lg">
               <Image
-              src = {car7}
-              alt = "Car7"
+                src={car7}
+                alt="Car7"
                 //className="h-full w-full object-cover"
               />
             </div>
