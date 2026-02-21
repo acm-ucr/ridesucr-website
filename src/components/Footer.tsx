@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Footer_Socials } from "@/data/FooterData";
+import { Rides_Links } from "@/data/LinksData";
 import Link from "next/link";
 
 const Footer = () => {
@@ -13,8 +13,8 @@ const Footer = () => {
         <div className="flex items-center gap-10">
           <div className="from-ridesucr-white/80 to-ridesucr-white/40 rounded-2xl bg-linear-to-b p-[1px]">
             <div className="bg-ridesucr-black/70 flex items-center gap-8 rounded-2xl px-3 py-3 backdrop-blur-xs">
-              {Footer_Socials.map(({ name, href, Icon }) => (
-                <Link key={name} href={href} target="_blank">
+              {Rides_Links.map(({ name, url, Icon }) => (
+                <Link key={name} href={url} target="_blank">
                   <Icon className="text-5xl text-white transition-opacity hover:opacity-80 md:text-4xl" />
                 </Link>
               ))}

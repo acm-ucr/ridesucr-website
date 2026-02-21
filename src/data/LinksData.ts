@@ -1,14 +1,19 @@
-export const Rides_Links = {
-  instagram: {
+import { FaInstagram, FaDiscord, FaLink } from "react-icons/fa6";
+
+export const Rides_Links = [
+  {
     name: "Instagram",
     url: "https://instagram.com/ridesucr",
+    Icon: FaInstagram,
   },
-  highlanderlink: {
+  {
     name: "HighlanderLink",
     url: "https://highlanderlink.ucr.edu/organization/ridesatucr",
+    Icon: FaLink,
   },
-  discord: {
+  {
     name: "Discord",
     url: "https://discord.gg/6TkcruGnDe",
+    Icon: FaDiscord,
   },
-} as const;
+];
