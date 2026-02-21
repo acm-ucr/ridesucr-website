@@ -1,12 +1,11 @@
 import Image from "next/image";
 import DownArrow from "@/public/Jump_Button.svg";
-import { Rides_Links } from "@/data/LinksData";
-import Link from "next/link";
+import Linkbox from "@/components/home/Linkbox";
 
 const Moto = () => {
   return (
     <div className="text-ridesucr-white relative w-screen">
-      <div className="flex items-center gap-x-[10vw] pl-[8vw]">
+      <div className="flex items-center justify-center gap-x-[10vw]">
         <div className="text-left">
           <div className="text-[12rem]">
             <p className="mb-[-0.5em]">Driven by</p>
@@ -16,21 +15,10 @@ const Moto = () => {
             We are rides @ ucr.
           </div>
         </div>
-
-        <div className="text-ridesucr-white flex h-[30vh] w-[25vw] flex-col justify-evenly rounded-md bg-white/30 p-8 text-center text-2xl backdrop-blur-lg">
-          <Link href={Rides_Links.discord} target="_blank">
-            Discord
-          </Link>
-          <Link href={Rides_Links.highlanderlink} target="_blank">
-            HighlanderLink
-          </Link>
-          <Link href={Rides_Links.instagram} target="_blank">
-            Instagram
-          </Link>
-        </div>
+        <Linkbox />
       </div>
 
-      <div className="mt-8 mb-16 flex justify-center">
+      <div className="my-16 flex justify-center">
         <button>
           <Image src={DownArrow} alt="Down Arrow" />
         </button>
