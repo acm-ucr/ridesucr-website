@@ -1,20 +1,19 @@
 import { FaInstagram, FaDiscord, FaLink } from "react-icons/fa6";
-import { RIDES_LINKS } from "./LinksData";
 
-export const FOOTER_SOCIALS = [
+export const Footer_Socials = [
   {
     name: "Instagram",
-    href: RIDES_LINKS.instagram,
+    href: "https://instagram.com/ridesucr",
     Icon: FaInstagram,
   },
   {
     name: "HighlanderLink",
-    href: RIDES_LINKS.highlanderlink,
+    href: "https://highlanderlink.ucr.edu/organization/ridesatucr",
     Icon: FaLink,
   },
   {
     name: "Discord",
-    href: RIDES_LINKS.discord,
+    href: "https://discord.gg/6TkcruGnDe",
     Icon: FaDiscord,
   },
 ];
