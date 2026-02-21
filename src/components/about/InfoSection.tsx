@@ -20,7 +20,7 @@ const InfoSection = () => {
             <Info info="Anyone is welcome to join our club, even if you're still learning about cars. We strive to be a beginner friendly club that can serve as your first steps into the car community as a whole. Joining the club is completely free, and most of our events are open to students as well as the general public." />
           </div>
 
-          <div className="relative w-px">
+          <div className="relative">
             <div className="absolute top-0 left-1/2 h-full w-[1px] -translate-x-1/2 bg-gradient-to-b from-transparent via-white to-transparent opacity-40" />
           </div>
 
@@ -34,11 +34,7 @@ const InfoSection = () => {
             </div>
 
             <div className="aspect-[3/2] overflow-hidden rounded-lg">
-              <Image
-                src={car7}
-                alt="Car7"
-                //className="h-full w-full object-cover"
-              />
+              <Image src={car7} alt="Car7" />
             </div>
           </div>
         </div>
