@@ -1,6 +1,6 @@
 import Image from "next/image";
 import DownArrow from "@/public/Jump_Button.svg";
-import { RIDES_LINKS } from "@/data/LinksData";
+import { Rides_Links } from "@/data/LinksData";
 import Link from "next/link";
 
 const Moto = () => {
@@ -18,13 +18,13 @@ const Moto = () => {
         </div>
 
         <div className="text-ridesucr-white flex h-[30vh] w-[25vw] flex-col justify-evenly rounded-md bg-white/30 p-8 text-center text-2xl backdrop-blur-lg">
-          <Link href={RIDES_LINKS.discord} target="_blank">
+          <Link href={Rides_Links.discord} target="_blank">
             Discord
           </Link>
-          <Link href={RIDES_LINKS.highlanderlink} target="_blank">
+          <Link href={Rides_Links.highlanderlink} target="_blank">
             HighlanderLink
           </Link>
-          <Link href={RIDES_LINKS.instagram} target="_blank">
+          <Link href={Rides_Links.instagram} target="_blank">
             Instagram
           </Link>
         </div>

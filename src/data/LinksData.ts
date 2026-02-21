@@ -1,4 +1,4 @@
-export const RIDES_LINKS = {
+export const Rides_Links = {
   instagram: "https://instagram.com/ridesucr",
   highlanderlink: "https://highlanderlink.ucr.edu/organization/ridesatucr",
   discord: "https://discord.gg/6TkcruGnDe",
