@@ -8,8 +8,8 @@ interface ErrorMessageProps {
 
 const ErrorMessage = ({ text }: ErrorMessageProps) => {
   return (
-    <div className="bg-ridesucr-black flex h-screen flex-col items-center">
-      <div className="relative flex h-lvh flex-col overflow-hidden px-[10vw] text-center lg:flex-row lg:px-[20vw]">
+    <div className="bg-ridesucr-black flex h-screen items-start">
+      <div className="relative flex flex-col overflow-hidden px-[10vw] text-center lg:flex-row lg:px-[20vw]">
         <div className="relative z-10 flex flex-col justify-center">
           <p className="text-ridesucr-white text-center text-[15rem] lg:text-[25rem]/none">
             {text}
@@ -27,7 +27,7 @@ const ErrorMessage = ({ text }: ErrorMessageProps) => {
         <Image
           src={ErrorImage}
           alt="Check Engine Light: Error Message Picture"
-          className="absolute top-36 right-3 left-3 h-[450px] w-[600px] blur-[0.3px] [mask-image:radial-gradient(circle_at_center,black_5%,transparent_65%)] lg:static lg:top-auto lg:h-auto lg:w-auto"
+          className="absolute top-38 right-3 left-3 h-[53vh] w-full blur-[0.3px] [mask-image:radial-gradient(circle_at_center,black_5%,transparent_65%)] lg:static lg:top-auto lg:h-auto lg:w-auto"
         />
       </div>
     </div>
