@@ -11,12 +11,11 @@ const Moto = () => {
             <p className="mb-[-0.5em]">Driven by</p>
             <p className="mb-[-0.2em]">Passion</p>
           </div>
-          <div className="hidden md:block md:text-5xl lg:text-6xl text-ridesucr-gray mt-4">
+          <div className="text-ridesucr-gray mt-4 hidden md:block md:text-5xl lg:text-6xl">
             We are rides @ ucr.
           </div>
-        </div >
+        </div>
 
-        
         <Linkbox />
       </div>
 
