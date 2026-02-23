@@ -1,5 +1,19 @@
-export const RIDES_LINKS = {
-  instagram: "https://instagram.com/ridesucr",
-  highlanderlink: "https://highlanderlink.ucr.edu/organization/ridesatucr",
-  discord: "https://discord.gg/6TkcruGnDe",
-};
+import { FaInstagram, FaDiscord, FaLink } from "react-icons/fa6";
+
+export const Rides_Links = [
+  {
+    name: "Instagram",
+    url: "https://instagram.com/ridesucr",
+    Icon: FaInstagram,
+  },
+  {
+    name: "HighlanderLink",
+    url: "https://highlanderlink.ucr.edu/organization/ridesatucr",
+    Icon: FaLink,
+  },
+  {
+    name: "Discord",
+    url: "https://discord.gg/6TkcruGnDe",
+    Icon: FaDiscord,
+  },
+];
