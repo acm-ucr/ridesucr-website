@@ -5,16 +5,18 @@ import Linkbox from "@/components/home/Linkbox";
 const Moto = () => {
   return (
     <div className="text-ridesucr-white relative w-screen">
-      <div className="flex items-center justify-center gap-x-[10vw]">
+      <div className="flex items-center justify-center md:gap-x-[5vw] lg:gap-x-[10vw]">
         <div className="text-left">
-          <div className="text-[12rem]">
+          <div className="hidden md:block md:text-[7rem] lg:text-[12rem]">
             <p className="mb-[-0.5em]">Driven by</p>
             <p className="mb-[-0.2em]">Passion</p>
           </div>
-          <div className="text-ridesucr-gray mt-4 text-6xl">
+          <div className="hidden md:block md:text-5xl lg:text-6xl text-ridesucr-gray mt-4">
             We are rides @ ucr.
           </div>
-        </div>
+        </div >
+
+        
         <Linkbox />
       </div>
 
