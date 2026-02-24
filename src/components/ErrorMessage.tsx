@@ -8,28 +8,30 @@ interface ErrorMessageProps {
 
 const ErrorMessage = ({ text }: ErrorMessageProps) => {
   return (
-    <div className="bg-ridesucr-black flex h-screen flex-col items-center">
-      <div className="relative flex h-lvh flex-col overflow-hidden px-[10vw] text-center lg:flex-row lg:px-[20vw]">
-        <div className="relative z-10 flex flex-col justify-center">
-          <p className="text-ridesucr-white text-center text-[15rem] lg:text-[25rem]/none">
+    <div className="min-h-screen flex flex-col justify-center items-center">
+      <div className="text-center lg:px-[15vw]">
+        <div className="lg:flex lg:justify-center">
+          <p className="text-ridesucr-white text-[15rem] lg:text-[25rem]/none">
             {text}
           </p>
-          <p className="text-ridesucr-gray relative z-20 pt-12 pb-2 text-center text-4xl lg:pt-0 lg:text-left lg:text-6xl">
+          <Image
+            src={ErrorImage}
+            alt="Check Engine Light: Error Message Picture"
+            className="pl-9 -my-44 -z-40 h-auto w-full blur-[0.3px] [mask-image:radial-gradient(circle_at_center,black_5%,transparent_65%)] lg:mt-20 lg:h-[450px] lg:w-[450px]"
+          />
+        </div>
+        <div className="relative z-20 text-4xl lg:text-6xl lg:text-left lg:pb-20">
+          <p className="text-ridesucr-gray pt-12 pb-2 ">
             OFF THE ROAD.
           </p>
           <Link
             href="/"
-            className="text-ridesucr-white relative z-20 text-center text-4xl underline hover:text-gray-400 lg:pt-0 lg:text-left lg:text-6xl"
+            className="text-ridesucr-white underline hover:text-gray-400"
           >
             RETURN HOME?
           </Link>
-        </div>
-        <Image
-          src={ErrorImage}
-          alt="Check Engine Light: Error Message Picture"
-          className="absolute top-36 right-3 left-3 h-[450px] w-[600px] blur-[0.3px] [mask-image:radial-gradient(circle_at_center,black_5%,transparent_65%)] lg:static lg:top-auto lg:h-auto lg:w-auto"
-        />
-      </div>
+        </div>     
+      </div>  
     </div>
   );
 };
