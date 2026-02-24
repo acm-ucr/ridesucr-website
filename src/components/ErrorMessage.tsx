@@ -14,6 +14,7 @@ const ErrorMessage = ({ text }: ErrorMessageProps) => {
           <p className="text-ridesucr-white text-[15rem] lg:text-[25rem]/none">
             {text}
           </p>
+
           <Image
             src={ErrorImage}
             alt="Check Engine Light: Error Message Picture"
