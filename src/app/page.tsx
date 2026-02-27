@@ -10,7 +10,7 @@ const Home = () => {
       <div className="-mt-10 flex h-screen w-full flex-col items-center justify-center">
         <Moto />
       </div>
-      <div id="about"className="relative min-h-screen">
+      <div id="about" className="relative min-h-screen">
         <AboutCover />
         <Title text="About Us" />
         <InfoSection />
