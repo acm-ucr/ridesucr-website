@@ -7,7 +7,7 @@ import query from "@tanstack/eslint-plugin-query";
 
 export default [
   {
-    ignores: ["dist/*"],
+    ignores: ["dist/*", "next-env.d.ts", ".next/**"],
   },
   { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
   {
