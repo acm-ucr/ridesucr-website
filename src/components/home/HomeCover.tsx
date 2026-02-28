@@ -4,7 +4,7 @@ import { galleryData } from "@/data/galleryData";
 
 const HomeCover = () => {
   const repeatingText = "DRIVEN BY PASSION • RIDES @ UCR • ".repeat(200);
-  const carData = galleryData.find((item) => item.Alt === "Car 8");
+  const carData = galleryData.find((item) => item.Alt === "Car 1");
 
   return (
     <div className="absolute inset-0 -z-10 h-screen w-full overflow-hidden bg-black">
