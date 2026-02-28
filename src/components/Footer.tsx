@@ -15,7 +15,7 @@ const Footer = () => {
             <div className="bg-ridesucr-black/70 flex items-center gap-8 rounded-2xl px-3 py-3 backdrop-blur-xs">
               {Rides_Links.map(({ name, url, Icon }) => (
                 <Link key={name} href={url} target="_blank">
-                  <Icon className="text-5xl text-white transition-opacity hover:opacity-80 scale-90 md:text-4xl" />
+                  <Icon className="scale-90 text-5xl text-white transition-opacity hover:opacity-80 md:text-4xl" />
                 </Link>
               ))}
             </div>
