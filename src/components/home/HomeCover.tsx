@@ -4,7 +4,7 @@ import { galleryData } from "@/data/galleryData";
 
 const HomeCover = () => {
   const repeatingText = "DRIVEN BY PASSION • RIDES @ UCR • ".repeat(200);
-  const carData = galleryData.find((item) => item.Alt === "Car 1");
+  const carData = galleryData.find((item) => item.Alt === "Car 8");
 
   return (
     <div className="absolute inset-0 -z-10 h-screen w-full overflow-hidden bg-black">
@@ -14,7 +14,7 @@ const HomeCover = () => {
           alt={carData.Alt}
           fill
           priority
-          className="scale-105 object-cover opacity-70 blur-sm"
+          className="scale-105 object-cover blur-sm"
         />
       )}
       <p className="p-2 text-3xl text-white opacity-3">{repeatingText}</p>
