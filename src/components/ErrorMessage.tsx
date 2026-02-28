@@ -30,7 +30,7 @@ const ErrorMessage = ({ text }: ErrorMessageProps) => {
             <Image
               src={ErrorImage}
               alt="Check Engine Light: Error Message Picture"
-              className="-z-40 mt-[-100px] h-auto w-full animate-pulse duration-3000 blur-[0.3px] [mask-image:radial-gradient(circle_at_center,black_5%,transparent_65%)] lg:mt-0 lg:ml-[200px] lg:h-[450px] lg:w-[450px]"
+              className="-z-40 mt-[-100px] h-auto w-full animate-pulse blur-[0.3px] duration-3000 [mask-image:radial-gradient(circle_at_center,black_5%,transparent_65%)] lg:mt-0 lg:ml-[200px] lg:h-[450px] lg:w-[450px]"
             />
           </motion.div>
         </div>
