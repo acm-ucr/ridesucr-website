@@ -6,8 +6,8 @@ import car6 from "@/public/cars/car6.webp";
 const InfoSection = () => {
   return (
     <div className="flex w-full justify-center px-4 pb-10">
-      <div className="lg:backdrop-blur-0 w-full overflow-hidden rounded-2xl border border-white/20 bg-white/10 backdrop-blur-lg md:w-5/6 lg:w-2/3 lg:rounded-none lg:border-0 lg:bg-transparent">
-        <div className="flex flex-col lg:hidden">
+      <div className="xl:backdrop-blur-0 w-full overflow-hidden rounded-2xl border border-white/20 bg-white/10 backdrop-blur-lg md:w-5/6 xl:w-2/3 xl:rounded-none xl:border-0 xl:bg-transparent">
+        <div className="flex flex-col xl:hidden">
           <Info info="Rides @ UCR is a student-led club that aims to bring the car community together. We organize weekly events, such as car meets, with the purpose of fostering a community of enthusiasts." />
 
           <div className="relative aspect-[3/2] overflow-hidden">
@@ -23,7 +23,7 @@ const InfoSection = () => {
           <Info info="Feel free to support us by buying our awesome merch or stopping at one of our meets!" />
         </div>
 
-        <div className="hidden flex-col gap-6 lg:flex">
+        <div className="hidden flex-col gap-6 xl:flex">
           <Info info="Rides @ UCR is a student-led club that aims to bring the car community together. We organize weekly events, such as car meets, with the purpose of fostering a community of enthusiasts." />
 
           <div className="relative h-4 w-full">
