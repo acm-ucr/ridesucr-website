@@ -7,10 +7,6 @@ import { motion } from "motion/react";
 import Image from "next/image";
 import { galleryData } from "@/data/galleryData";
 
-const imageAnimation = () => ({
-  whileHover: { scale: 1.05 },
-});
-
 const CarsGrid = () => {
   return (
     <div className="grid h-auto grid-cols-1 gap-5 lg:h-[76rem] lg:grid-cols-3 lg:grid-rows-3 lg:gap-x-1.5 lg:gap-y-1.5">
@@ -31,10 +27,10 @@ const CarsGrid = () => {
         <motion.div key={index} {...imageAnimation()} className="">
           <div
             key={index}
-            className={`lg:border-ridesucr-white ring-ridesucr-white/70 bg-ridesucr-gray/45 flex items-center justify-center overflow-hidden rounded-xl border p-[5px] shadow-2xl ring-1 backdrop-blur-md lg:rounded-none lg:bg-transparent lg:p-0 lg:shadow-none lg:ring-0 ${index == 0 ? "lg:rounded-tl-md" : ""} ${index == 2 ? "lg:rounded-tr-md" : ""} ${index == 6 ? "lg:rounded-bl-md" : ""} ${index == 8 ? "lg:rounded-br-md" : ""} `}
+            className={`lg:border-ridesucr-white ring-ridesucr-white/70 bg-ridesucr-gray/45 flex items-center justify-center rounded-xl border p-[5px] shadow-2xl ring-1 backdrop-blur-md lg:rounded-none lg:bg-transparent lg:p-0 lg:shadow-none lg:ring-0 ${index == 0 ? "lg:rounded-tl-md" : ""} ${index == 2 ? "lg:rounded-tr-md" : ""} ${index == 6 ? "lg:rounded-bl-md" : ""} ${index == 8 ? "lg:rounded-br-md" : ""} `}
           >
             <Image
-              className={`${"flex h-full w-full rounded-xl object-cover lg:rounded-none"}`}
+              className={`${"object-cover h-full w-full rounded-xl lg:rounded-none"}`}
               src={item.Pictures}
               alt={item.Alt}
             />
