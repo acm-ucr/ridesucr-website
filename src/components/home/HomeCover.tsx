@@ -14,7 +14,7 @@ const HomeCover = () => {
           alt={carData.Alt}
           fill
           priority
-          className="scale-105 object-cover opacity-70 blur-sm"
+          className="scale-105 object-cover blur-sm"
         />
       )}
       <p className="p-2 text-3xl text-white opacity-3">{repeatingText}</p>

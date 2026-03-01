@@ -3,7 +3,7 @@ import Image from "next/image";
 import { galleryData } from "@/data/galleryData";
 
 const GarageCover = () => {
-  const carData = galleryData.find((item) => item.Alt === "Car 1");
+  const carData = galleryData.find((item) => item.Alt === "Car 8");
 
   return (
     <div className="fixed inset-0 -z-10 h-screen w-full overflow-hidden bg-black">

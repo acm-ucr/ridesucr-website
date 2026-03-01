@@ -4,7 +4,7 @@ type TitleProps = {
 
 const Title = ({ text }: TitleProps) => {
   return (
-    <div className="flex items-center justify-center py-10 text-center text-7xl text-white uppercase">
+    <div className="text-ridesucr-white flex justify-center py-10 text-center text-5xl md:text-7xl">
       {text}
     </div>
   );
