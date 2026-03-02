@@ -3,10 +3,10 @@ import Image from "next/image";
 import { galleryData } from "@/data/galleryData";
 
 const GarageCover = () => {
-  const carData = galleryData.find((item) => item.Alt === "Car 1");
+  const carData = galleryData.find((item) => item.Alt === "Car 6");
 
   return (
-    <div className="fixed inset-0 -z-10 h-screen w-full overflow-hidden bg-black">
+    <div className="absolute inset-0 -z-10 h-screen w-full overflow-hidden bg-black">
       {carData && (
         <Image
           src={carData.Pictures}
@@ -16,7 +16,7 @@ const GarageCover = () => {
           className="scale-110 object-cover opacity-80 blur-md"
         />
       )}
-      <div className="absolute inset-0 bg-gradient-to-b from-black from-15% via-transparent via-50% to-black to-85%" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black from-5% via-transparent via-40% to-black to-100%" />
     </div>
   );
 };
