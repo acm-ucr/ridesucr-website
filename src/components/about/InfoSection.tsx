@@ -2,6 +2,8 @@ import Info from "@/components/about/Info";
 import Image from "next/image";
 import car7 from "@/public/cars/car7.webp";
 import car6 from "@/public/cars/car6.webp";
+import Link from "next/link";
+import upArrow from "@/public/Arrow_up.svg";
 
 const InfoSection = () => {
   return (
@@ -61,6 +63,13 @@ const InfoSection = () => {
           <Info info="Feel free to support us by buying our awesome merch or stopping at one of our meets!" />
         </div>
       </div>
+
+      <Link href="/#moto">
+        <button className="absolute top-5/8 right-1/16 -translate-y-1/2 h-16 w-16 rounded-full border-[0.5px] border-white bg-white/15 backdrop-blur-lg items-center justify-center hidden lg:flex">
+          <Image src={upArrow} alt="Up Arrow" />
+        </button>
+      </Link>
+        
     </div>
   );
 };
