@@ -8,7 +8,10 @@ const Home = () => {
   return (
     <div className="relative min-h-screen w-full overflow-hidden pt-6">
       <HomeCover />
-      <div id="moto" className="-mt-10 flex h-screen w-full flex-col items-center justify-center">
+      <div
+        id="moto"
+        className="-mt-10 flex h-screen w-full flex-col items-center justify-center"
+      >
         <Moto />
       </div>
       <div id="about" className="relative min-h-screen">
