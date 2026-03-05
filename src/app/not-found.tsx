@@ -1,5 +1,7 @@
+import ErrorMessage from "@/components/ErrorMessage";
+
 const NotFound = () => {
-  return <div>404 Page Not Found</div>;
+  return <ErrorMessage text="404" />;
 };
 
 export default NotFound;
