@@ -64,10 +64,11 @@ const InfoSection = () => {
         </div>
       </div>
 
-      <Link href="/#moto">
-        <button className="absolute top-5/8 right-1/16 hidden h-16 w-16 -translate-y-1/2 items-center justify-center rounded-full border-[0.5px] border-white bg-white/15 backdrop-blur-lg lg:flex">
-          <Image src={upArrow} alt="Up Arrow" />
-        </button>
+      <Link
+        href="/#moto"
+        className="absolute top-5/8 right-1/16 hidden h-16 w-16 -translate-y-1/2 items-center justify-center rounded-full border-[0.5px] border-white bg-white/15 backdrop-blur-lg lg:flex"
+      >
+        <Image src={upArrow} alt="Up Arrow" />
       </Link>
     </div>
   );
