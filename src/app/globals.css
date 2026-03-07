@@ -133,3 +133,16 @@
 html {
   scroll-behavior: smooth;
 }
+@keyframes titleFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.title-fade-up {
+  animation: titleFadeUp 0.8s ease-out fowards;
+}
