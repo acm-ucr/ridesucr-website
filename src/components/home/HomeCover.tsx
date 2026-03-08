@@ -7,7 +7,7 @@ const HomeCover = () => {
   const carData = galleryData.find((item) => item.Alt === "Car 1");
 
   return (
-    <div className="absolute inset-0 -z-10 h-screen w-full overflow-hidden bg-black">
+    <div className="absolute inset-0 -z-10 h-screen w-full overflow-hidden">
       {carData && (
         <Image
           src={carData.Pictures}
@@ -18,7 +18,7 @@ const HomeCover = () => {
         />
       )}
       <p className="p-2 text-3xl text-white opacity-3">{repeatingText}</p>
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent via-50% to-black" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black from-0% via-transparent via-50% to-black to-90%" />
     </div>
   );
 };
