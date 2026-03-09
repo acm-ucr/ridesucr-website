@@ -3,9 +3,10 @@ import Moto from "@/components/home/Moto";
 import AboutCover from "@/components/about/AboutCover";
 import Title from "@/components/Title";
 import InfoSection from "@/components/about/InfoSection";
+
 const Home = () => {
   return (
-    <div className="relative min-h-screen w-full overflow-hidden">
+    <div className="relative min-h-screen w-full overflow-hidden pt-6">
       <HomeCover />
       <div
         id="moto"

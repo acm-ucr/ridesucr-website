@@ -19,7 +19,7 @@ const Moto = () => {
         <Linkbox />
       </div>
 
-      <div className="my-16 flex justify-center">
+      <div className="my-12 flex justify-center pt-10 lg:pt-0">
         <button>
           <Image src={DownArrow} alt="Down Arrow" />
         </button>
