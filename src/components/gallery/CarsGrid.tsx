@@ -10,8 +10,8 @@ const CarsGrid = () => {
       {galleryData.map((item, index) => (
         <motion.div
           key={index}
-          whileHover={{ scale: 1.1, zIndex: 70 }}
-          whileTap={{ scale: 1.1, zIndex: 70 }}
+          whileHover={{ scale: 1.05, zIndex: 70 }}
+          whileTap={{ scale: 1.05, zIndex: 70 }}
           className={`lg:border-ridesucr-white ring-ridesucr-white/70 bg-ridesucr-gray/45 flex items-center justify-center rounded-xl border p-[5px] shadow-2xl ring-1 backdrop-blur-md lg:rounded-none lg:bg-transparent lg:p-0 lg:shadow-none lg:ring-0 ${index == 0 ? "lg:rounded-tl-md" : ""} ${index == 2 ? "lg:rounded-tr-md" : ""} ${index == 6 ? "lg:rounded-bl-md" : ""} ${index == 8 ? "lg:rounded-br-md" : ""} `}
         >
           <Image
