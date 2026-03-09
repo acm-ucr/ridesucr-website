@@ -14,7 +14,7 @@ const Home = () => {
       >
         <Moto />
       </div>
-      <div id="about" className="relative min-h-screen">
+      <div id="about" className="relative">
         <AboutCover />
         <Title text="About Us" />
         <InfoSection />
