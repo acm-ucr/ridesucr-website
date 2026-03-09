@@ -2,18 +2,24 @@
 
 import * as React from "react";
 import { DayPicker } from "react-day-picker";
-
+import CalendarDay, { EventProps } from "@/components/events/CalendarDay";
+//import { GoogleEventProps } from "@/components/events/CalendarCall";
 import { useState } from "react";
 import { BiSolidLeftArrow } from "react-icons/bi";
 import { BiSolidRightArrow } from "react-icons/bi";
+
+export type CalendarProps = React.ComponentProps<typeof DayPicker> & {
+  events: EventProps[];
+};
 
 function Calendar({
   className,
   classNames,
   showOutsideDays = true,
   components,
+  events,
   ...props
-}: React.ComponentProps<typeof DayPicker>) {
+}: CalendarProps) {
   const week = [
     "SUNDAY",
     "MONDAY",
@@ -81,6 +87,13 @@ function Calendar({
         }}
         components={{
           ...components,
+          Day: ({ day }) => (
+            <CalendarDay 
+              date={day.date}
+              events={events}
+              displayMonth={day.date}
+            />
+          )
         }}
         {...props}
       />

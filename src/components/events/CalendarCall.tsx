@@ -77,12 +77,15 @@ const CalendarCall = () => {
             Loading...
           </div>
         ) : (
+          <div className="">
           <Calendar
             mode="single"
             selected={date}
             onSelect={setDate}
-            className="bg-ridesucr-white/10 rounded-lg border backdrop-blur-md"
+            className="bg-ridesucr-white/10 backdrop-blur-md"
+            events={data}
           />
+        </div>
         )}
       </div>
       <UpcomingEvents events={data} />
