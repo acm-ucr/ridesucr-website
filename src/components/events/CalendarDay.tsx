@@ -1,4 +1,3 @@
-
 export type EventProps = {
   start: string;
   end: string;
@@ -32,24 +31,26 @@ const CalendarDay = ({ date, events, displayMonth }: CalendarDayCellProps) => {
     return date >= eventStartDate && date <= eventEndDate;
   });
   return (
-    <div className={` w-full flex h-[14vh] flex-col overflow-y-auto border  bg-ridesucr-white/10 border-ridesucr-white
-        ${isToday ? "bg-transparent" : ""}
-        ${currentMonth ? "text-ridesucr-white" : "text-ridesucr-gray"}
-    `}>
-        <p className="mt-1 mr-1 flex justify-end text-3xl">
-            {date.getDate()}
-        </p>
-        {filteredEvents.map((event, index) => {
-                return (
-                    <div key={index} className="text-lg px-1 border rounded-xl">
-                        <p className="truncate">{event.title}</p>
-                    </div>
-                )
-            }
-        )}
+    <div
+      className={`bg-ridesucr-white/10 border-ridesucr-white flex h-[14vh] w-full flex-col overflow-y-auto border ${isToday ? "bg-transparent" : ""} `}
+    >
+      <p
+        className={`mt-1 mr-1 flex justify-end text-3xl ${currentMonth ? "text-ridesucr-white" : "text-ridesucr-gray"} `}
+      >
+        {date.getDate()}
+      </p>
+      {filteredEvents.map((event, index) => {
+        return (
+          <div
+            key={index}
+            className="text-ridesucr-white rounded-xl border px-1 text-center text-lg"
+          >
+            <p className="truncate">{event.title}</p>
+          </div>
+        );
+      })}
     </div>
-  )
-}
-//still gotta make non-current month days text-gray, rounded?, mobile
+  );
+};
 
-export default CalendarDay
+export default CalendarDay;
