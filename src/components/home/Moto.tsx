@@ -59,7 +59,7 @@ const Moto = () => {
             We are rides @ ucr.
           </motion.div>
         </div>
-        <motion.div {...linkboxAnimation}>
+        <motion.div {...linkboxAnimation} className = "bg-white/10 backdrop-blur-md">
           <Linkbox />
         </motion.div>
       </div>

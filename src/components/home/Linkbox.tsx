@@ -11,7 +11,7 @@ const Linkbox = () => {
         <Image src={Logo} alt="Logo" className="mb-4" />
         <Image src={Est_2021} alt="Est 2021" className="ml-7" />
       </div>
-      <div className="text-ridesucr-white flex h-[40vh] w-[80vw] flex-col justify-evenly rounded-lg border-[0.5px] border-white bg-white/15 text-center text-5xl underline backdrop-blur-lg sm:w-[60vw] md:w-[40vw] lg:w-[25vw]">
+      <div className="text-ridesucr-white flex h-[40vh] w-[80vw] flex-col justify-evenly rounded-lg border-[0.5px]  text-center text-5xl underline sm:w-[60vw] md:w-[40vw] lg:w-[25vw]">
         {Rides_Links.map(({ name, url }) => (
           <Link key={name} href={url} target="_blank">
             {name}
