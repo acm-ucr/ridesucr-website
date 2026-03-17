@@ -17,38 +17,34 @@ const InView = {
 
 const InfoAnimation = {
   whileTap: { scale: 1.05 },
-  whileHover: { scale: 1.05},
+  whileHover: { scale: 1.05 },
   transition: { duration: 0.4 },
-}
+};
 
 const InfoSection = () => {
   return (
     <div className="flex w-full justify-center px-4 pb-10">
       <div className="w-full md:w-5/6 xl:w-2/3 xl:rounded-none xl:border-0 xl:bg-transparent">
         <div className="rounded-xl border xl:hidden">
-            <div className="flex flex-col xl:hidden">
-              <div className="overflow-hidden rounded-t-xl">
-                <Info info="Rides @ UCR is a student-led club that aims to bring the car community together. We organize weekly events, such as car meets, with the purpose of fostering a community of enthusiasts." />
-              </div>
-              <motion.div
-                {...InfoAnimation}
-              >
-                <div className="relative aspect-[3/2] overflow-hidden">
-                  <Image src={car6} alt="Car6" fill className="object-cover" />
-                </div>
-              </motion.div>
-              <Info info="Anyone is welcome to join our club, even if you're still learning about cars. We strive to be a beginner friendly club that can serve as your first steps into the car community as a whole. Joining the club is completely free, and most of our events are open to students as well as the general public." />
-              <motion.div
-                {...InfoAnimation}
-              >
-                <div className="relative aspect-[3/2] overflow-hidden">
-                  <Image src={car7} alt="Car7" fill className="object-cover" />
-                </div>
-              </motion.div>
-              <div className="overflow-hidden rounded-b-xl">
-                <Info info="Feel free to support us by buying our awesome merch or stopping at one of our meets!" />
-              </div>
+          <div className="flex flex-col xl:hidden">
+            <div className="overflow-hidden rounded-t-xl">
+              <Info info="Rides @ UCR is a student-led club that aims to bring the car community together. We organize weekly events, such as car meets, with the purpose of fostering a community of enthusiasts." />
             </div>
+            <motion.div {...InfoAnimation}>
+              <div className="relative aspect-[3/2] overflow-hidden">
+                <Image src={car6} alt="Car6" fill className="object-cover" />
+              </div>
+            </motion.div>
+            <Info info="Anyone is welcome to join our club, even if you're still learning about cars. We strive to be a beginner friendly club that can serve as your first steps into the car community as a whole. Joining the club is completely free, and most of our events are open to students as well as the general public." />
+            <motion.div {...InfoAnimation}>
+              <div className="relative aspect-[3/2] overflow-hidden">
+                <Image src={car7} alt="Car7" fill className="object-cover" />
+              </div>
+            </motion.div>
+            <div className="overflow-hidden rounded-b-xl">
+              <Info info="Feel free to support us by buying our awesome merch or stopping at one of our meets!" />
+            </div>
+          </div>
         </div>
         <div className="hidden flex-col gap-6 xl:flex">
           <Info info="Rides @ UCR is a student-led club that aims to bring the car community together. We organize weekly events, such as car meets, with the purpose of fostering a community of enthusiasts." />
@@ -62,10 +58,7 @@ const InfoSection = () => {
             </div>
             <div className="absolute left-1/2 h-full w-[1px] -translate-x-1/2 bg-gradient-to-b from-transparent via-white to-transparent opacity-40" />
             <div className="flex flex-1 flex-col gap-4">
-              <motion.div
-                {...InView}
-                {...InfoAnimation}
-              >
+              <motion.div {...InView} {...InfoAnimation}>
                 <div className="relative aspect-[3/2] overflow-hidden rounded-lg">
                   <Image src={car6} alt="Car6" fill className="object-cover" />
                 </div>
@@ -73,10 +66,7 @@ const InfoSection = () => {
               <div className="relative h-4 w-full">
                 <div className="absolute top-1/2 left-1/2 h-[1px] w-3/4 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-transparent via-white to-transparent opacity-40" />
               </div>
-              <motion.div
-                {...InView}
-                {...InfoAnimation}
-              >
+              <motion.div {...InView} {...InfoAnimation}>
                 <div className="relative aspect-[3/2] overflow-hidden rounded-lg">
                   <Image src={car7} alt="Car7" fill className="object-cover" />
                 </div>
