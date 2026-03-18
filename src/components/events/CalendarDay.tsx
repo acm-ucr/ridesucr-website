@@ -31,7 +31,7 @@ const CalendarDay = ({ date, events, displayMonth }: CalendarDayCellProps) => {
     return date >= eventStartDate && date <= eventEndDate;
   });
   return (
-    <div
+    <td
       className={`bg-ridesucr-white/10 border-ridesucr-white flex h-[14vh] w-full flex-col overflow-y-auto border ${isToday ? "bg-transparent" : ""} `}
     >
       <p
@@ -43,13 +43,13 @@ const CalendarDay = ({ date, events, displayMonth }: CalendarDayCellProps) => {
         return (
           <div
             key={index}
-            className="text-ridesucr-white rounded-xl border px-1 text-center text-lg"
+            className="text-ridesucr-white truncate rounded-xl border px-1 text-center text-lg"
           >
-            <p className="truncate">{event.title}</p>
+            {event.title}
           </div>
         );
       })}
-    </div>
+    </td>
   );
 };
 

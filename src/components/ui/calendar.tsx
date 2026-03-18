@@ -62,7 +62,7 @@ function Calendar({
           <div className="hidden grid-cols-7 text-center lg:grid">
             {week.map((day, key) => (
               <div
-                className="text-ridesucr-white/30 relative text-3xl"
+                className="text-ridesucr-white/30 relative text-2xl xl:text-3xl"
                 key={key}
               >
                 {day}
