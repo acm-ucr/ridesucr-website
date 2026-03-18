@@ -4,6 +4,8 @@ import Image from "next/image";
 import DownArrow from "@/public/Jump_Button.svg";
 import { motion } from "motion/react";
 import Linkbox from "@/components/home/Linkbox";
+import Est_2021 from "@/public/Est_2021.svg";
+import Logo from "@/public/Logo-White.svg";
 
 const linkboxAnimation = {
   initial: { opacity: 0, scale: 0 },
@@ -59,12 +61,18 @@ const Moto = () => {
             We are rides @ ucr.
           </motion.div>
         </div>
-        <motion.div
-          {...linkboxAnimation}
-          className="bg-white/10 backdrop-blur-md"
-        >
-          <Linkbox />
-        </motion.div>
+        <div className="flex flex-col items-center">
+          <div className="mb-4 md:hidden">
+            <Image src={Logo} alt="Logo" className="mb-4" />
+            <Image src={Est_2021} alt="Est 2021" className="ml-7" />
+          </div>
+          <motion.div
+            {...linkboxAnimation}
+            className="bg-white/10 backdrop-blur-md"
+          >
+            <Linkbox />
+          </motion.div>
+        </div>
       </div>
 
       <motion.div
