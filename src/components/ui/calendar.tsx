@@ -72,35 +72,36 @@ function Calendar({
               </div>
             ))}
           </div>
-          <DayPicker
-            showOutsideDays={showOutsideDays}
-            month={currentDate}
-            onMonthChange={setCurrentDate}
-            className={className}
-            formatters={{}}
-            classNames={{
-              root: "w-full",
-              months: "flex gap-4 flex-col md:flex-row relative",
-              month: "flex flex-col w-full gap-4",
-              nav: "hidden",
-              month_caption: "hidden",
-              weekdays: "hidden",
-              week: "flex w-full",
-              day: "relative w-full text-end text-3xl pr-2 pt-2 aspect-square border border-ridesucr-white/20",
-              ...classNames,
-            }}
-            components={{
-              ...components,
-              Day: ({ day }) => (
-                <CalendarDay
-                  date={day.date}
-                  events={events}
-                  displayMonth={currentDate}
-                />
-              ),
-            }}
-            {...props}
-          />
+          <div className="border-ridesucr-white overflow-hidden rounded-l-lg border">
+            <DayPicker
+              showOutsideDays={showOutsideDays}
+              month={currentDate}
+              onMonthChange={setCurrentDate}
+              className={className}
+              formatters={{}}
+              classNames={{
+                root: "w-full",
+                months: "flex gap-4 flex-col md:flex-row relative",
+                month: "flex flex-col w-full gap-4",
+                nav: "hidden",
+                month_caption: "hidden",
+                weekdays: "hidden",
+                week: "flex w-full",
+                ...classNames,
+              }}
+              components={{
+                ...components,
+                Day: ({ day }) => (
+                  <CalendarDay
+                    date={day.date}
+                    events={events}
+                    displayMonth={currentDate}
+                  />
+                ),
+              }}
+              {...props}
+            />
+          </div>
         </div>
         <UpcomingEvents events={events} currMonth={currentDate} />
       </div>
