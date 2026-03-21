@@ -32,7 +32,7 @@ const CalendarDay = ({ date, events, displayMonth }: CalendarDayCellProps) => {
   });
   return (
     <td
-      className={`border-ridesucr-white flex h-[14vh] w-full flex-col overflow-y-auto border ${isToday ? "bg-ridesucr-white/10" : ""} `}
+      className={`border-ridesucr-white flex h-[14vh] w-full flex-col overflow-y-auto border-r border-b ${isToday ? "bg-ridesucr-white/10" : ""} `}
     >
       <p
         className={`mt-1 mr-1 flex justify-end text-3xl ${currentMonth ? "text-ridesucr-white" : "text-ridesucr-gray"} `}
