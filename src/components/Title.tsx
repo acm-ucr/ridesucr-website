@@ -8,9 +8,14 @@ type TitleProps = {
 
 const Title = ({ text }: TitleProps) => {
   return (
-    <div className="title-fade-up text-ridesucr-white flex justify-center py-10 text-center text-5xl md:text-7xl">
+    <motion.h1
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition = {{ duration: 0.5}}
+      className="title-fade-up text-ridesucr-white flex justify-center py-10 text-center text-5xl md:text-7xl"
+    >
       {text}
-    </div>
+    </motion.h1>
   );
 };
 
