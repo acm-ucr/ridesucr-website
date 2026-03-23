@@ -68,7 +68,7 @@ const Moto = () => {
           </div>
           <motion.div
             {...linkboxAnimation}
-            className="bg-white/10 backdrop-blur-md"
+            className="bg-ridesucr-white/15 rounded-lg backdrop-blur-md"
           >
             <Linkbox />
           </motion.div>
@@ -79,11 +79,9 @@ const Moto = () => {
         whileHover={{ scale: 1.1 }}
         className="my-12 flex animate-pulse justify-center pt-10 lg:pt-0"
       >
-        <button>
-          <Link href={"/#about"}>
-            <Image src={DownArrow} alt="About" />
-          </Link>
-        </button>
+        <Link href={"/#about"}>
+          <Image src={DownArrow} alt="About" />
+        </Link>
       </motion.div>
 
       <div className="from-ridesucr-white to-ridesucr-black absolute bottom-0 left-1/2 h-[1px] w-1/2 -translate-x-1/2 bg-radial" />

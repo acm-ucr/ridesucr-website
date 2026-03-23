@@ -1,12 +1,19 @@
 "use client";
 import Image from "next/image";
 import { galleryData } from "@/data/galleryData";
+import { motion } from "motion/react";
 
 const GarageCover = () => {
   const carData = galleryData.find((item) => item.Alt === "Car 8");
 
   return (
-    <div className="fixed inset-0 -z-10 h-screen w-full overflow-hidden bg-black">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 100 }}
+      transition={{ duration: 2 }}
+      viewport={{ once: true }}
+      className="fixed inset-0 -z-10 h-screen w-full overflow-hidden bg-black"
+    >
       {carData && (
         <Image
           src={carData.Pictures}
@@ -17,7 +24,7 @@ const GarageCover = () => {
         />
       )}
       <div className="absolute inset-0 bg-gradient-to-b from-black from-15% via-transparent via-50% to-black to-85%" />
-    </div>
+    </motion.div>
   );
 };
 

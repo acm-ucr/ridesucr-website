@@ -76,15 +76,13 @@ const CalendarCall = () => {
             Loading...
           </div>
         ) : (
-          <div className="">
-            <Calendar
-              mode="single"
-              selected={date}
-              onSelect={setDate}
-              className="bg-ridesucr-white/10 backdrop-blur-md"
-              events={data}
-            />
-          </div>
+          <Calendar
+            mode="single"
+            selected={date}
+            onSelect={setDate}
+            className="bg-ridesucr-white/10 backdrop-blur-md"
+            events={data}
+          />
         )}
       </div>
     </div>
