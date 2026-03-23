@@ -10,16 +10,12 @@ const Footer = () => {
         DRIVEN BY PASSION
       </div>
       <div className="flex translate-y-5 items-center gap-7">
-        <div className="flex items-center gap-10">
-          <div className="from-ridesucr-white/80 to-ridesucr-white/40 rounded-2xl bg-linear-to-b p-[1px]">
-            <div className="bg-ridesucr-black/70 flex items-center gap-8 rounded-2xl px-3 py-3 backdrop-blur-xs">
-              {Rides_Links.map(({ name, url, Icon }) => (
-                <Link key={name} href={url} target="_blank">
-                  <Icon className="scale-90 text-5xl text-white transition-opacity hover:opacity-80 md:text-4xl" />
-                </Link>
-              ))}
-            </div>
-          </div>
+        <div className="bg-ridesucr-white/15 border-ridesucr-white flex items-center gap-8 rounded-2xl border bg-linear-to-b p-[1px] px-3 py-3 backdrop-blur-lg">
+          {Rides_Links.map(({ name, url, Icon }) => (
+            <Link key={name} href={url} target="_blank">
+              <Icon className="scale-90 text-5xl text-white transition-opacity hover:opacity-80 md:text-4xl" />
+            </Link>
+          ))}
         </div>
 
         <Link href="/" className="hidden flex-col items-center md:flex">
