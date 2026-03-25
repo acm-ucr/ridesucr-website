@@ -2,7 +2,6 @@
 import { Calendar } from "@/components/ui/calendar";
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import UpcomingEvents from "@/components/events/UpcomingEvents";
 
 export type GoogleEventProps = {
   start: {
@@ -70,8 +69,8 @@ const CalendarCall = () => {
   });
 
   return (
-    <div className="mx-4 mb-10 flex">
-      <div className="flex w-2/3 flex-col justify-center space-y-4">
+    <div className="mx-4 mb-10 items-center">
+      <div className="flex flex-col justify-center space-y-4">
         {isLoading ? (
           <div className="text-ridesucr-white flex justify-center text-4xl">
             Loading...
@@ -81,11 +80,11 @@ const CalendarCall = () => {
             mode="single"
             selected={date}
             onSelect={setDate}
-            className="bg-ridesucr-white/10 rounded-lg border backdrop-blur-md"
+            className="bg-ridesucr-white/10 backdrop-blur-md"
+            events={data}
           />
         )}
       </div>
-      <UpcomingEvents events={data} />
     </div>
   );
 };

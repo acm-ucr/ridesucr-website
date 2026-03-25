@@ -1,29 +1,88 @@
+"use client";
+import Link from "next/link";
 import Image from "next/image";
 import DownArrow from "@/public/Jump_Button.svg";
+import { motion } from "motion/react";
 import Linkbox from "@/components/home/Linkbox";
+import Est_2021 from "@/public/Est_2021.svg";
+import Logo from "@/public/Logo-White.svg";
+
+const linkboxAnimation = {
+  initial: { opacity: 0, scale: 0 },
+  whileInView: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      type: "spring",
+      stiffness: 400,
+      damping: 20,
+      delay: 0.3,
+    },
+  },
+  whileHover: {
+    scale: 1.1,
+    transition: {
+      type: "spring",
+      stiffness: 400,
+      damping: 15,
+    },
+  },
+  viewport: { once: true },
+} as const;
+
+const subtitleAnimation = {
+  initial: { opacity: 0, y: -50 },
+  whileInView: { opacity: 1, y: 0 },
+  transition: { duration: 0.3, delay: 0.2 },
+};
+
+const drivenbyAnimation = {
+  initial: { opacity: 0, scale: 0, y: -100 },
+  whileInView: { opacity: 1, scale: 1, y: 0 },
+  viewport: { once: true },
+};
 
 const Moto = () => {
   return (
     <div className="text-ridesucr-white relative w-screen">
       <div className="flex items-center justify-center md:gap-x-[5vw] lg:gap-x-[10vw]">
         <div className="text-left">
-          <div className="hidden md:block md:text-[7rem] lg:text-[12rem]">
+          <motion.div
+            {...drivenbyAnimation}
+            className="hidden md:block md:text-[7rem] lg:text-[12rem]"
+          >
             <p className="mb-[-0.5em]">Driven by</p>
             <p className="mb-[-0.2em]">Passion</p>
-          </div>
-          <div className="text-ridesucr-gray mt-4 hidden md:block md:text-5xl lg:text-6xl">
+          </motion.div>
+          <motion.div
+            className="text-ridesucr-gray mt-4 hidden md:block md:text-5xl lg:text-6xl"
+            {...subtitleAnimation}
+          >
             We are rides @ ucr.
-          </div>
+          </motion.div>
         </div>
-
-        <Linkbox />
+        <div className="flex flex-col items-center">
+          <div className="mb-4 md:hidden">
+            <Image src={Logo} alt="Logo" className="mb-4" />
+            <Image src={Est_2021} alt="Est 2021" className="ml-7" />
+          </div>
+          <motion.div
+            {...linkboxAnimation}
+            className="bg-ridesucr-white/15 rounded-lg backdrop-blur-md"
+          >
+            <Linkbox />
+          </motion.div>
+        </div>
       </div>
 
-      <div className="my-16 flex justify-center">
-        <button>
-          <Image src={DownArrow} alt="Down Arrow" />
-        </button>
-      </div>
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        className="my-12 flex animate-pulse justify-center pt-10 lg:pt-0"
+      >
+        <Link href={"/#about"}>
+          <Image src={DownArrow} alt="About" />
+        </Link>
+      </motion.div>
 
       <div className="from-ridesucr-white to-ridesucr-black absolute bottom-0 left-1/2 h-[1px] w-1/2 -translate-x-1/2 bg-radial" />
     </div>
