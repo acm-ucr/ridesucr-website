@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Rides_Links } from "@/data/LinksData";
 import Link from "next/link";
+import Logo from "@/public/Logo.svg";
 
 const Footer = () => {
   return (
@@ -20,7 +21,7 @@ const Footer = () => {
 
         <Link href="/" className="hidden flex-col items-center md:flex">
           <Image
-            src="/Logo.svg"
+            src={Logo}
             alt="Logo"
             width={64}
             height={64}
